@@ -16,6 +16,10 @@ jobs:
     environment: production
     steps:
     - uses: actions/checkout@v2
+    - run: |
+       echo $GITHUB_SERVER_URL
+    - run: |
+       echo $GITHUB_REPOSITORY       
     - uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
