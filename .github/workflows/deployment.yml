@@ -29,6 +29,8 @@ jobs:
       run: |
         az bicep build --file infrastructure/main.bicep
     - run: |
+       cat infrastructure/main.json
+    - run: |
        ls -lR        
     - name: Azure Create Resource Group
       uses: Azure/CLI@v1
