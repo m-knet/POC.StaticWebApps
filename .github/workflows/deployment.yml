@@ -14,7 +14,7 @@ jobs:
       resourceGroupName: static-web-app
       resourceGroupLocation: "westeurope"
       githubRepository: ${{ github.repository }}
-      githubUrl: $GITHUB_SERVER_URL       
+      githubUrl: "https://github.com"       
     environment: production
     steps:
     - uses: actions/checkout@v2
